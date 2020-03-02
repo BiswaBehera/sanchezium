@@ -1,0 +1,37 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+
+  
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+       
+        
+
+        <div style="margin: 5rem auto 5rem" class="form">
+            <h1>Register Here</h1>
+            <div>
+                <form method='post' action='/resistration'>
+                    <span>Email :</span>
+                     <br>
+                     <input type="email"  name= 'email' required placeholder='enter the email'>
+                     <br>
+                     <span>Password : </span>
+                     <br>
+                     <input type='password' name='password' required placeholder="enter password here">
+                     <br>
+                     <input type="submit" name='submit'>
+            
+                </form>
+            </div>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+{% endblock %}
+
+  

@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+
+  
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+       
+        
+
+        <div style="margin: 5rem auto 5rem" class="form">
+            <h1>Profile</h1>
+            <h1>{{session['email']}}</h1>
+            <img src="{{session['qr']}}" alt="Cole Emmerich">
+            <a href="/user_logout" class="btn btn-success btn-lg">Logout</a>
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+{% endblock %}
+
+  

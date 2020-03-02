@@ -1,0 +1,34 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+
+  
+    <section id="contact" class="section-bg wow fadeInUp">
+
+      <div class="container">
+       
+        
+
+        <div style="margin: 5rem auto 5rem" class="form">
+            <h1>checkout list  here</h1>
+        {% for product in products_details %}
+        <h1>{{product.name}}</h1>
+        <h1>{{product.price}}</h1>
+        <img src='static/img/images/{{product.photo}}' style='height: 200px; width:200px;'>
+        <br>
+        <form action='/remove_from_check_out' method='post'>
+         <input type='hidden' name = 'id' value='{{product.id}}'> 
+         <br>  
+         <input type='submit' value="remove"  class="btn btn-lg btn-danger">
+        </form>
+        {% endfor %}
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+{% endblock %}
+
+  
